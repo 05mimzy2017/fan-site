@@ -1,0 +1,172 @@
+body{
+  background-image: url("img/usa-flag.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main  aside"
+    "footer footer";
+
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 800px;
+}
+
+header{
+  grid-area: header;
+  text-align: center;
+  color:  #620da8;
+  font-family: 'Italianno', cursive;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #0f02ff;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+
+img{
+  position: left top;
+  margin-top: 38px;
+  margin-right: 8px;
+}
+
+main{
+  grid-area: main;
+  color: #000000;
+  font-size: 18px;
+}
+
+img.left {
+    border-radius: 20%;
+    float: left;
+    margin-left: 20px;
+}
+
+aside{
+   grid-area: aside;
+   color: #000000;
+   font-size: 30px;
+   font-family: 'Parisienne', cursive;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 16px;
+
+}
+
+ul{
+  text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 2px #000000;
+    border-style: outset;
+    width: 100%;
+}
+
+td, th {
+    border: 2px #000000;
+    border-style: outset;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+    color :#000000;
+}
+th {
+    background-color: ;
+    color: #ffffff;
+    font-family: 'Slabo 37px', serif;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+caption {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lobster Two', cursive;
+  margin-top: 10px;
+}
+
+thead {
+    background-color: ;
+}
+
+tbody {
+  font-family: 'Slabo 37px', serif;
+}
+
+tr {
+
+}
+
+th {
+  background-color: ;
+  color: #000000;
+}
+
+    @media (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border: 1px solid #aaaaaa;
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+
+      td {
+        display: block;
+        text-align: right;
+      }
+
+      td:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+
+
+footer{
+   background-color: ;
+   grid-area: footer;
+   text-align: center;
+   font-size: 32px;
+}
+
+@media (max-width: 600px) {
+  div.container {
+     grid-template-columns: 1fr;
+     grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer"
+   }
+
+}
