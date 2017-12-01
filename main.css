@@ -1,8 +1,18 @@
+
+/*
+blue: #212844;
+red: #C22032;
+gray: #F3F3F3;
+*/
+
+
+
+
 body{
   background-image: url("img/usa-flag.jpg");
   background-attachment: fixed;
   background-size: cover;
-
+  max-width: auto;
 }
 
 div.container {
@@ -21,10 +31,10 @@ div.container {
 header{
   grid-area: header;
   text-align: center;
-  color:  #620da8;
+  color:  #212844;
   font-family: 'Italianno', cursive;
-  font-size: 40px;
-  text-shadow: 2px 2px 4px #0f02ff;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #C22032;
   padding-right: 10px;
   margin-right: 5px;
 }
@@ -34,25 +44,48 @@ img{
   position: left top;
   margin-top: 38px;
   margin-right: 8px;
+    max-width: 100%;
 }
 
 main{
   grid-area: main;
-  color: #000000;
+  color: #212844;
   font-size: 18px;
+  font-family: 'Vollkorn SC', serif;
 }
 
+
+p{
+   line-height: 1.8;
+   color: #212844;
+}
+
+p2{
+   line-height: 1.8;
+}
 img.left {
     border-radius: 20%;
     float: left;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+      max-width: 100%;
 }
 
 aside{
    grid-area: aside;
-   color: #000000;
+   color: #212844;
    font-size: 30px;
    font-family: 'Parisienne', cursive;
+}
+
+/* visited link */
+a:visited {
+    color: #C22032;
+}
+
+/* mouse over link */
+a:hover {
+    color: #212844;
 }
 
 img.center {
@@ -61,7 +94,8 @@ img.center {
     margin-right: auto;
     border-style: solid;
     border-radius: 16px;
-
+    paddin-right: 15px;
+    max-width: 100%;
 }
 
 ul{
@@ -69,27 +103,23 @@ ul{
 }
 
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
-    border: 2px #000000;
+    border: 2px #C22032;
     border-style: outset;
     width: 100%;
 }
 
 td, th {
-    border: 2px #000000;
+    border: 2px #C22032;
     border-style: outset;
     text-align: left;
     padding: 10px;
+    font-family: 'Vollkorn SC', serif;
 }
 
-tr:nth-child(even) {
-    background-color: ;
-    color :#000000;
-}
 th {
     background-color: ;
-    color: #ffffff;
+    color: #212844;
     font-family: 'Slabo 37px', serif;
 }
 
@@ -99,7 +129,7 @@ body {
 
 
 caption {
-  color: #000000;
+  color: #212844;
   font-size: 20px;
   font-weight: bold;
   font-family: 'Lobster Two', cursive;
@@ -155,8 +185,10 @@ th {
 footer{
    background-color: ;
    grid-area: footer;
-   text-align: center;
+   text-align: left;
    font-size: 32px;
+   padding-right: 30px;
+   padding-top: 20px;
 }
 
 @media (max-width: 600px) {
